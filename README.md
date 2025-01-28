@@ -1,2 +1,99 @@
-# Illuminated-Signs-control-board
-A control board based on ATmega328P for managing 6 or 12 LED signboards with relays to control 12V/24V LEDs. Features 8 DIP switches for configuring LED count, delay times, and operation modes. Includes schematics, PCB designs, and firmware for reliable LED control in illuminated signboards.
+# Illuminated Signs Control Board  
+
+**Convert static LED signs into dynamic, attention-grabbing displays!**  
+
+This project is designed for hobbyists and sign manufacturers who want to bring life to their LED signboards. The **Illuminated Signs Control Board** allows you to control up to **12 digits (LEDs)** in predefined patterns. It's easy to assemble, fully customizable, and supports both **12V and 24V systems**.  
+
+## Features  
+- **Dynamic LED Patterns**: Choose between **4 operation modes** (1 static and 3 dynamic).  
+- **Customizable Number of LEDs**: Control **1 to 12 digits** with 4 switches.  
+- **Adjustable Delay Times**: Use 2 switches to select **4 delay intervals** for dynamic patterns.  
+- **Easy Assembly**: Single-layer PCB with mostly THT components and minimal SMD parts.  
+- **Flexible Voltage Options**: Operates on **12V or 24V**, depending on your needs.  
+
+---
+
+## Components List  
+### Essential Components:  
+1. **ATmega328P microcontroller** (with Arduino bootloader).  
+2. **THT Relays**: 12V or 24V (depending on configuration).  
+3. **Voltage Regulator**: 12V (only for 24V systems).  
+4. **Switches**: 8 pull-up switches for control inputs.  
+5. **LED Indicators**: Small LEDs to monitor each output channel.  
+6. Resistors, capacitors, and diodes (standard THT components).  
+
+### Optional Components:  
+- **SMD Jump Wires** for crossing traces.  
+- **Heat Sink** for voltage regulator (if needed).  
+
+---
+
+## Hardware Overview  
+1. **Inputs**:  
+   - **Power Supply**: 12V or 24V and GND.  
+   - **Control Switches**:  
+     - 4 switches for the number of LEDs.  
+     - 2 switches for operation modes.  
+     - 2 switches for delay times.  
+2. **Outputs**:  
+   - 12 or 6 positive outputs (based on the circuit model).  
+   - 2-3 common GND pins for all outputs.  
+3. **PCB Design**:  
+   - Single-layer for easy DIY manufacturing.  
+   - THT components for straightforward soldering.  
+   - Compact layout with labeled connections.  
+
+---
+
+## Firmware  
+The firmware is written on the **Arduino platform** and requires the ATmega328P chip to be bootloaded.  
+### Setup:  
+1. Burn the **Arduino bootloader** onto the ATmega328P chip.  
+2. Open the provided Arduino code in the repository.  
+3. Compile and upload the code to the ATmega328P using an **Arduino-compatible programmer**.  
+
+---
+
+## Operation  
+### Control Switches  
+1. **Number of LEDs (4 switches)**:  
+   - Use binary values (e.g., `0000` for 0 LEDs, `0001` for 1 LED, up to `1100` for 12 LEDs).  
+2. **Operation Modes (2 switches)**:  
+   - `00`: Static mode.  
+   - `01`: Dynamic Mode 1 (e.g., sequential lighting).  
+   - `10`: Dynamic Mode 2 (e.g., bouncing pattern).  
+   - `11`: Dynamic Mode 3 (e.g., random flashing).  
+3. **Delay Time (2 switches)**:  
+   - `00`: 250ms.  
+   - `01`: 500ms.  
+   - `10`: 1 second.  
+   - `11`: 2 seconds.  
+
+### Testing  
+After assembling the board:  
+1. Set all switches to the maximum values.  
+2. Vary the operation mode and delay settings.  
+3. Observe LED indicator behavior on each output channel.  
+
+---
+
+## Repository Structure  
+- **Hardware:** PCB design files, schematics, and BOM
+- **Firmware:** Arduino firmware and bootloader setup
+- **Documentation:** User guides, truth table, and setup instructions
+- **Real-Tests:** Images, videos, and reports of real-world tests
+
+---
+
+## Future Plans  
+- **Wi-Fi Support** for wireless control.  
+- **Mobile App** to customize patterns and delays.  
+- **RGB Control** for each digit.  
+- **Custom Modes** for user-defined patterns.  
+
+---
+
+## License  
+This project is released under the **MIT License** for firmware and **CC-BY-SA** for hardware designs.  
+
+Feel free to contribute, modify, and enhance this project.
