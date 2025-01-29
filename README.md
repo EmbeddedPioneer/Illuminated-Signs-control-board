@@ -7,7 +7,7 @@ This project is designed for hobbyists and sign manufacturers who want to bring 
 ## Features  
 - **Dynamic LED Patterns**: Choose between **4 operation modes** (1 static and 3 dynamic).  
 - **Customizable Number of LEDs**: Control **1 to 12 digits** with 4 switches.  
-- **Adjustable Delay Times**: Use 2 switches to select **4 delay intervals** for dynamic patterns.  
+- **Adjustable Delay Times**: Use a potentiometer to select **delay intervals** for dynamic patterns.  
 - **Easy Assembly**: Single-layer PCB with mostly THT components and minimal SMD parts.  
 - **Flexible Voltage Options**: Operates on **12V or 24V**, depending on your needs.  
 
@@ -17,13 +17,13 @@ This project is designed for hobbyists and sign manufacturers who want to bring 
 ### Essential Components:  
 1. **ATmega328P microcontroller** (with Arduino bootloader).  
 2. **THT Relays**: 12V or 24V (depending on configuration).  
-3. **Voltage Regulator**: 12V (only for 24V systems).  
+3. **Voltage Regulators**: 12V (only for 24V systems), 5V .  
 4. **Switches**: 8 pull-up switches for control inputs.  
 5. **LED Indicators**: Small LEDs to monitor each output channel.  
-6. Resistors, capacitors, and diodes (standard THT components).  
+6. Resistors, capacitors, transistors, and diodes (standard THT components).  
 
 ### Optional Components:  
-- **SMD Jump Wires** for crossing traces.  
+- **PCB Mask** to add a protection layer to the PCB.  
 - **Heat Sink** for voltage regulator (if needed).  
 
 ---
@@ -34,7 +34,7 @@ This project is designed for hobbyists and sign manufacturers who want to bring 
    - **Control Switches**:  
      - 4 switches for the number of LEDs.  
      - 2 switches for operation modes.  
-     - 2 switches for delay times.  
+     - Potentiometer for delay times.  
 2. **Outputs**:  
    - 12 or 6 positive outputs (based on the circuit model).  
    - 2-3 common GND pins for all outputs.  
@@ -59,15 +59,12 @@ The firmware is written on the **Arduino platform** and requires the ATmega328P 
 1. **Number of LEDs (4 switches)**:  
    - Use binary values (e.g., `0000` for 0 LEDs, `0001` for 1 LED, up to `1100` for 12 LEDs).  
 2. **Operation Modes (2 switches)**:  
-   - `00`: Static mode.  
-   - `01`: Dynamic Mode 1 (e.g., sequential lighting).  
-   - `10`: Dynamic Mode 2 (e.g., bouncing pattern).  
-   - `11`: Dynamic Mode 3 (e.g., random flashing).  
-3. **Delay Time (2 switches)**:  
-   - `00`: 250ms.  
-   - `01`: 500ms.  
-   - `10`: 1 second.  
-   - `11`: 2 seconds.  
+   - `00`: Dynamic Mode 1 (e.g., Sequential Lighting).  
+   - `01`: Dynamic Mode 2 (e.g., Blinking All LEDs).  
+   - `10`: Dynamic Mode 3 (e.g., Alternate Pairs Lighting).  
+   - `11`: Dynamic Mode 4 (e.g., Random LED Lighting).
+     
+---
 
 ### Testing  
 After assembling the board:  
@@ -78,7 +75,7 @@ After assembling the board:
 ---
 
 ## Repository Structure  
-- **Hardware:** PCB design files, schematics, and BOM
+- **Hardware:** PCB design files, schematics, KiCad Files, and BOM
 - **Firmware:** Arduino firmware and bootloader setup
 - **Documentation:** User guides, truth table, and setup instructions
 - **Real-Tests:** Images, videos, and reports of real-world tests
@@ -94,6 +91,6 @@ After assembling the board:
 ---
 
 ## License  
-This project is released under the **MIT License** for firmware and **CC-BY-SA** for hardware designs.  
+This project is released under the **MIT License**.  
 
 Feel free to contribute, modify, and enhance this project.
