@@ -5,7 +5,7 @@
 This project is designed for hobbyists and sign manufacturers who want to bring life to their LED signboards. The **Illuminated Signs Control Board** allows you to control up to **12 digits (LEDs)** in predefined patterns. It's easy to assemble, fully customizable, and supports both **12V and 24V systems**.  
 
 ## Features  
-- **Dynamic LED Patterns**: Choose between **4 operation modes** (1 static and 3 dynamic).  
+- **Dynamic LED Patterns**: Choose between **4 operation modes**.  
 - **Customizable Number of LEDs**: Control **1 to 12 digits** with 4 switches.  
 - **Adjustable Delay Times**: Use a potentiometer to select **delay intervals** for dynamic patterns.  
 - **Easy Assembly**: Single-layer PCB with mostly THT components and minimal SMD parts.  
