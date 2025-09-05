@@ -8,7 +8,7 @@ This project is designed for hobbyists and sign manufacturers who want to bring 
 
 Here’s the finished project:
 
-![Final Assembly](12-Pin circuit Front view.jpg)
+![Final Assembly](Real-Tests/12-Pin circuit Front view.jpg)
 
 ## Features  
 - **Dynamic LED Patterns**: Choose between **4 operation modes**.  
