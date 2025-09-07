@@ -1,7 +1,7 @@
 # LED Signs Controller
 _A custom controller for LED shop signs using an ATmega 328p. Supports up to 12 relays (12 sign digits) with adjustable switching delay and multiple light patterns._
 
-![Final Result](docs/images/6-Pin-circuit-Back-view.jpg)
+![Final Result](docs/images/12-digit-front.jpg)
 
 ## Final Result
 
