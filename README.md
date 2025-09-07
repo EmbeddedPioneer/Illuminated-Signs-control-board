@@ -5,9 +5,6 @@ _A custom controller for LED shop signs using an ATmega 328p. Supports up to 12 
   <img src="docs/images/12-digit-front.jpg" width="500"/>
 </p>
 
-
-<img width="834" height="505" alt="image" src="https://github.com/user-attachments/assets/137302d4-e995-43d3-b651-7d66defc7117" />
-
 ---
 📄 [Read the full User Guide](docs/User_Guide.pdf)
 
