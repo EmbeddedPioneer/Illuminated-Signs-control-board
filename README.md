@@ -1,8 +1,5 @@
-# Illuminated Signs Control Board  
-
-**Convert static LED signs into dynamic, attention-grabbing displays!**  
-
-This project is designed for hobbyists and sign manufacturers who want to bring life to their LED signboards. The **Illuminated Signs Control Board** allows you to control up to **12 digits (LEDs)** in predefined patterns. It's easy to assemble, fully customizable, and supports both **12V and 24V systems**.  
+# LED Signs Controller
+_A custom controller for LED shop signs using an ATmega 328p. Supports up to 12 relays (12 sign digits) with adjustable switching delay and multiple light patterns._
 
 ## Final Result
 
