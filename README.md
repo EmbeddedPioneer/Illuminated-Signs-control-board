@@ -5,20 +5,11 @@ _A custom controller for LED shop signs using an ATmega 328p. Supports up to 12 
   <img src="docs/images/12-digit-front.jpg" width="500"/>
 </p>
 
-## Overview
-This project is an ATmega 328p based controller for shop LED signs.  
-It can drive up to 12 digits, with 4 light patterns and adjustable timing between 500 ms and 1 s.   
-There are 2 versions: 6-digits and 12-digits.
 
-
-## Features  
-- **Dynamic LED Patterns**: Choose between **4 operation modes**.  
-- **Customizable Number of LEDs**: Control **1 to 12 digits** with 4 switches.  
-- **Adjustable Delay Times**: Use a potentiometer to select **delay intervals** for dynamic patterns.  
-- **Easy Assembly**: Single-layer PCB with mostly THT components and minimal SMD parts.  
-- **Flexible Voltage Options**: Operates on **12V or 24V**, depending on your needs.  
+<img width="834" height="505" alt="image" src="https://github.com/user-attachments/assets/137302d4-e995-43d3-b651-7d66defc7117" />
 
 ---
+📄 [Read the full User Guide](docs/User_Guide.pdf)
 
 ## Components List  
 ### Essential Components:  
